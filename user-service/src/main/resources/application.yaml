@@ -25,6 +25,17 @@ jwt:
   expiration: 86400000
 
 management:
-  zipkin:
+  endpoints:
+    web:
+      exposure:
+        include: "*"        # ← exposes /actuator/prometheus endpoint
+    metrics:
+      export:
+        prometheus:
+          enabled: true
     tracing:
-      endpoint: http://zipkin:9411/api/v2/spans
+      sampling:
+        probability: 1.0
+    zipkin:
+      tracing:
+        endpoint: http://zipkin:9411/api/v2/spans

@@ -396,4 +396,4 @@ Key environment variables used in `docker-compose.yml`:
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the PR License.

@@ -68,3 +68,7 @@ management:
     web:
       exposure:
         include: health,info,gateway
+  prometheus:
+    metrics:
+      export:
+        enabled: true
