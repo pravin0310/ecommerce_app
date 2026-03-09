@@ -1,0 +1,15 @@
+package org.com.pravin.paymentservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class PaymentserviceApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(PaymentserviceApplication.class, args);
+    }
+
+}
